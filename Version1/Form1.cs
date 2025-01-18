@@ -42,6 +42,25 @@ namespace Version1
 
         private void button18_Click(object sender, EventArgs e)
         {
+            // Check if any radio button in groupBox1 is selected
+            bool isSelected = false;
+
+            foreach (Control control in groupBox1.Controls)
+            {
+                if (control is RadioButton radioButton && radioButton.Checked)
+                {
+                    isSelected = true;
+                    break;
+                }
+            }
+
+            // If no selection, display a message and stop the process
+            if (!isSelected)
+            {
+                MessageBox.Show("Please select an option in the group box before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Exit the method
+            }
+
             double totalCost = 0;
             List<string> unpairedItems = new List<string>(); // To hold single items that can't form a combo
             List<string> comboItems = new List<string>(); // To hold combo items
