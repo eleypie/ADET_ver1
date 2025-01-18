@@ -42,5 +42,10 @@ namespace Version1
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
