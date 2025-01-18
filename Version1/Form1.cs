@@ -800,7 +800,7 @@ namespace Version1
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            rtfReceipt.Clear();
+            paymentMethod = "Gcash";
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)
