@@ -179,6 +179,7 @@
             // 
             // rtfReceipt
             // 
+            this.rtfReceipt.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfReceipt.Location = new System.Drawing.Point(30, 117);
             this.rtfReceipt.Name = "rtfReceipt";
             this.rtfReceipt.Size = new System.Drawing.Size(253, 259);
