@@ -2,6 +2,43 @@
 {
     partial class Form1
     {
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private BrbVideoManager.Controls.RoundedButton roundedButton1;
+        private BrbVideoManager.Controls.RoundedButton roundedButton3;
+        private BrbVideoManager.Controls.RoundedButton roundedButton2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label4;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -541,42 +578,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private BrbVideoManager.Controls.RoundedButton roundedButton1;
-        private BrbVideoManager.Controls.RoundedButton roundedButton3;
-        private BrbVideoManager.Controls.RoundedButton roundedButton2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label4;
+        
     }
 }
 
