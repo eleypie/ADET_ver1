@@ -212,11 +212,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -248,11 +249,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -282,11 +284,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -316,11 +319,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -350,11 +354,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -384,11 +389,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -418,11 +424,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -452,11 +459,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -486,11 +494,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                 "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -520,11 +529,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -554,11 +564,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -588,11 +599,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -622,11 +634,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -656,11 +669,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -690,11 +704,11 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                    "ChaoFan",
+                    "Order Number",
+                    "Total Cost",
+                    "Time:",
+                    "Date:"
                 };
 
                 bool isReceipt = false;
@@ -724,11 +738,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
+                "Time:",
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -758,11 +773,12 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-                "ChaoFan",
-                "Order Number",
-                "Total Cost",
+                 "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
                 "Time:",
-                "Date:"
+                "Date:",
+                "Total Cost"
                 };
 
                 bool isReceipt = false;
@@ -824,11 +840,12 @@ namespace Version1
         {
             string[] receiptMarkers = new string[]
             {
-                "ChaoFan",
-                "Order Number",
-                "Total Cost",
+                "Cuadro De J",
+                "Polytechnic University of the Philippines",
+                "09778420921",
                 "Time:",
-                "Date:"
+                "Date:",
+                "Total Cost"
             };
 
             foreach (string marker in receiptMarkers)
