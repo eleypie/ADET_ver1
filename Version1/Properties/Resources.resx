@@ -133,6 +133,12 @@
   <data name="Group 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Place Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Place Order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BurgerSteak_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BurgerSteak_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Embutido_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Embutido_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,19 +154,16 @@
   <data name="Print Receipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Print Receipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hotdog_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hotdog_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="New Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\New Order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Maling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maling.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Place Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Place Order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Hotdog_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hotdog_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BurgerSteak_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BurgerSteak_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo_Image 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_Image 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

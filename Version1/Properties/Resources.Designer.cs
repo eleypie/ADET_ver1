@@ -113,6 +113,16 @@ namespace Version1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_Image_1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Image 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Longganisa_Image {
             get {
                 object obj = ResourceManager.GetObject("Longganisa_Image", resourceCulture);
