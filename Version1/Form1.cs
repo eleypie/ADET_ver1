@@ -19,6 +19,7 @@ namespace Version1
         }
 
         static int orderNumber = 1;
+        string paymentMethod;
         private void roundedButton2_Click(object sender, EventArgs e)
         {
 
@@ -131,11 +132,11 @@ namespace Version1
             rtfReceipt.Clear();
 
             // Add receipt header
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
-            rtfReceipt.AppendText("                   ChaoFan" + Environment.NewLine);
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
+            rtfReceipt.AppendText("                                            ChaoFan" + Environment.NewLine);
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText($"Order Number: {orderNumber}" + Environment.NewLine);
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
 
             // Add receipt content (combo items first, then single items)
             foreach (string receiptLine in receiptLines)
@@ -144,14 +145,14 @@ namespace Version1
             }
 
             // Add total cost to the receipt
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText($"Total Cost               ₱{totalCost:F2}" + Environment.NewLine);
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
-
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
+            rtfReceipt.AppendText($"Payment Method: {paymentMethod}" + Environment.NewLine);
             // Add footer with date and time
             rtfReceipt.AppendText($"Time: {DateTime.Now:hh:mm tt}" + Environment.NewLine);
             rtfReceipt.AppendText($"Date: {DateTime.Now:MM/dd/yyyy}" + Environment.NewLine);
-            rtfReceipt.AppendText("==========================" + Environment.NewLine);
+            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
 
             // Increment the order number for the next order
             orderNumber++;
@@ -749,6 +750,48 @@ namespace Version1
             else
             {
                 MessageBox.Show("RichTextBox not found!");
+            }
+        }
+
+        private void newOrderBtn_Click(object sender, EventArgs e)
+        {
+            rtfReceipt.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            paymentMethod = "Cash";
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            paymentMethod = "Paymaya";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            rtfReceipt.Clear();
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(rtfReceipt.Text, new Font("Barlow", 15, FontStyle.Regular), Brushes.Black, new PointF(100, 100));
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
             }
         }
     }

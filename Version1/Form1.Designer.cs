@@ -75,6 +75,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -122,6 +124,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Cash";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -129,11 +132,12 @@
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(157, 29);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(84, 20);
+            this.radioButton3.Size = new System.Drawing.Size(93, 20);
             this.radioButton3.TabIndex = 59;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Paymay";
+            this.radioButton3.Text = "Paymaya";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -146,6 +150,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Gcash";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label7
             // 
@@ -179,7 +184,7 @@
             // 
             // rtfReceipt
             // 
-            this.rtfReceipt.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtfReceipt.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfReceipt.Location = new System.Drawing.Point(30, 117);
             this.rtfReceipt.Name = "rtfReceipt";
             this.rtfReceipt.Size = new System.Drawing.Size(253, 259);
@@ -202,6 +207,7 @@
             this.newOrderBtn.Size = new System.Drawing.Size(257, 57);
             this.newOrderBtn.TabIndex = 55;
             this.newOrderBtn.UseVisualStyleBackColor = false;
+            this.newOrderBtn.Click += new System.EventHandler(this.newOrderBtn_Click);
             // 
             // printBtn
             // 
@@ -218,6 +224,7 @@
             this.printBtn.Size = new System.Drawing.Size(257, 57);
             this.printBtn.TabIndex = 54;
             this.printBtn.UseVisualStyleBackColor = false;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // placeOrderBtn
             // 
@@ -239,6 +246,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button17);
             this.panel3.Controls.Add(this.button16);
             this.panel3.Controls.Add(this.button15);
@@ -504,6 +512,22 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -512,9 +536,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -559,6 +584,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 
