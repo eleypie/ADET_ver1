@@ -98,5 +98,35 @@
   <ItemGroup>
     <None Include="Resources\Group 9.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maling_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 9 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shanghai_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embutido_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotdog_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Longganisa_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meatballs_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siomai_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TofuSisig_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BurgerSteak_Image.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
