@@ -131,5 +131,35 @@
   <ItemGroup>
     <None Include="Resources\Logo_Image 1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMaling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewShanghai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewEmbutido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHotdog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewLongganisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMeatballs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewSiomai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewTofuSisig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewBurgerSteak.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

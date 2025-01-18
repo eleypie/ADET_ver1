@@ -103,6 +103,16 @@ namespace Version1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Header {
+            get {
+                object obj = ResourceManager.GetObject("Header", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hotdog_Image {
             get {
                 object obj = ResourceManager.GetObject("Hotdog_Image", resourceCulture);
@@ -166,6 +176,96 @@ namespace Version1.Properties {
         internal static System.Drawing.Bitmap New_Order {
             get {
                 object obj = ResourceManager.GetObject("New Order", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewBurgerSteak {
+            get {
+                object obj = ResourceManager.GetObject("NewBurgerSteak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewEmbutido {
+            get {
+                object obj = ResourceManager.GetObject("NewEmbutido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewHotdog {
+            get {
+                object obj = ResourceManager.GetObject("NewHotdog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewLongganisa {
+            get {
+                object obj = ResourceManager.GetObject("NewLongganisa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewMaling {
+            get {
+                object obj = ResourceManager.GetObject("NewMaling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewMeatballs {
+            get {
+                object obj = ResourceManager.GetObject("NewMeatballs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewShanghai {
+            get {
+                object obj = ResourceManager.GetObject("NewShanghai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewSiomai {
+            get {
+                object obj = ResourceManager.GetObject("NewSiomai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewTofuSisig {
+            get {
+                object obj = ResourceManager.GetObject("NewTofuSisig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
