@@ -49,9 +49,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.rtfReceipt = new System.Windows.Forms.RichTextBox();
-            this.newOrderBtn = new System.Windows.Forms.Button();
-            this.printBtn = new System.Windows.Forms.Button();
-            this.placeOrderBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -69,14 +66,17 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.newOrderBtn = new System.Windows.Forms.Button();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.placeOrderBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -186,7 +186,7 @@
             // rtfReceipt
             // 
             this.rtfReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtfReceipt.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtfReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfReceipt.Location = new System.Drawing.Point(30, 117);
             this.rtfReceipt.Name = "rtfReceipt";
             this.rtfReceipt.ReadOnly = true;
@@ -195,57 +195,6 @@
             this.rtfReceipt.TabIndex = 56;
             this.rtfReceipt.Text = "";
             this.rtfReceipt.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // newOrderBtn
-            // 
-            this.newOrderBtn.BackColor = System.Drawing.Color.White;
-            this.newOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newOrderBtn.BackgroundImage")));
-            this.newOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.newOrderBtn.FlatAppearance.BorderSize = 0;
-            this.newOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newOrderBtn.ForeColor = System.Drawing.Color.White;
-            this.newOrderBtn.Image = global::Version1.Properties.Resources.New_Order;
-            this.newOrderBtn.Location = new System.Drawing.Point(16, 633);
-            this.newOrderBtn.Name = "newOrderBtn";
-            this.newOrderBtn.Size = new System.Drawing.Size(257, 57);
-            this.newOrderBtn.TabIndex = 55;
-            this.newOrderBtn.UseVisualStyleBackColor = false;
-            this.newOrderBtn.Click += new System.EventHandler(this.newOrderBtn_Click);
-            // 
-            // printBtn
-            // 
-            this.printBtn.BackColor = System.Drawing.Color.White;
-            this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
-            this.printBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.printBtn.FlatAppearance.BorderSize = 0;
-            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBtn.ForeColor = System.Drawing.Color.White;
-            this.printBtn.Image = global::Version1.Properties.Resources.Print_Receipt;
-            this.printBtn.Location = new System.Drawing.Point(16, 570);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(257, 57);
-            this.printBtn.TabIndex = 54;
-            this.printBtn.UseVisualStyleBackColor = false;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
-            // 
-            // placeOrderBtn
-            // 
-            this.placeOrderBtn.BackColor = System.Drawing.Color.White;
-            this.placeOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("placeOrderBtn.BackgroundImage")));
-            this.placeOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.placeOrderBtn.FlatAppearance.BorderSize = 0;
-            this.placeOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.placeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeOrderBtn.ForeColor = System.Drawing.Color.White;
-            this.placeOrderBtn.Image = global::Version1.Properties.Resources.Place_Order;
-            this.placeOrderBtn.Location = new System.Drawing.Point(16, 498);
-            this.placeOrderBtn.Name = "placeOrderBtn";
-            this.placeOrderBtn.Size = new System.Drawing.Size(257, 57);
-            this.placeOrderBtn.TabIndex = 53;
-            this.placeOrderBtn.UseVisualStyleBackColor = false;
-            this.placeOrderBtn.Click += new System.EventHandler(this.button18_Click);
             // 
             // panel3
             // 
@@ -404,7 +353,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(166, 284);
+            this.button6.Location = new System.Drawing.Point(312, 284);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 59);
             this.button6.TabIndex = 51;
@@ -414,7 +363,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(27, 284);
+            this.button5.Location = new System.Drawing.Point(442, 284);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(124, 59);
             this.button5.TabIndex = 50;
@@ -424,7 +373,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(459, 190);
+            this.button4.Location = new System.Drawing.Point(442, 190);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(124, 59);
             this.button4.TabIndex = 49;
@@ -444,23 +393,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(166, 190);
+            this.button2.Location = new System.Drawing.Point(572, 241);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 59);
             this.button2.TabIndex = 47;
             this.button2.Text = "Hotdog";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(27, 190);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 59);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Maling";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -493,29 +432,6 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "BUY ONE TAKE ONE - PHP 70";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1006, 114);
-            this.panel2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Barlow ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(60, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(594, 54);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -531,6 +447,90 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+            // 
+            // newOrderBtn
+            // 
+            this.newOrderBtn.BackColor = System.Drawing.Color.White;
+            this.newOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newOrderBtn.BackgroundImage")));
+            this.newOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.newOrderBtn.FlatAppearance.BorderSize = 0;
+            this.newOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newOrderBtn.ForeColor = System.Drawing.Color.White;
+            this.newOrderBtn.Image = global::Version1.Properties.Resources.New_Order;
+            this.newOrderBtn.Location = new System.Drawing.Point(16, 633);
+            this.newOrderBtn.Name = "newOrderBtn";
+            this.newOrderBtn.Size = new System.Drawing.Size(257, 57);
+            this.newOrderBtn.TabIndex = 55;
+            this.newOrderBtn.UseVisualStyleBackColor = false;
+            this.newOrderBtn.Click += new System.EventHandler(this.newOrderBtn_Click);
+            // 
+            // printBtn
+            // 
+            this.printBtn.BackColor = System.Drawing.Color.White;
+            this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
+            this.printBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.printBtn.FlatAppearance.BorderSize = 0;
+            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.ForeColor = System.Drawing.Color.White;
+            this.printBtn.Image = global::Version1.Properties.Resources.Print_Receipt;
+            this.printBtn.Location = new System.Drawing.Point(16, 570);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(257, 57);
+            this.printBtn.TabIndex = 54;
+            this.printBtn.UseVisualStyleBackColor = false;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
+            // placeOrderBtn
+            // 
+            this.placeOrderBtn.BackColor = System.Drawing.Color.White;
+            this.placeOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("placeOrderBtn.BackgroundImage")));
+            this.placeOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.placeOrderBtn.FlatAppearance.BorderSize = 0;
+            this.placeOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.placeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placeOrderBtn.ForeColor = System.Drawing.Color.White;
+            this.placeOrderBtn.Image = global::Version1.Properties.Resources.Place_Order;
+            this.placeOrderBtn.Location = new System.Drawing.Point(16, 498);
+            this.placeOrderBtn.Name = "placeOrderBtn";
+            this.placeOrderBtn.Size = new System.Drawing.Size(257, 57);
+            this.placeOrderBtn.TabIndex = 53;
+            this.placeOrderBtn.UseVisualStyleBackColor = false;
+            this.placeOrderBtn.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1006, 114);
+            this.panel2.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(60, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(702, 46);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
+            // 
+            // button1
+            // 
+            this.button1.Image = global::Version1.Properties.Resources.Group_9;
+            this.button1.Location = new System.Drawing.Point(27, 190);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(229, 160);
+            this.button1.TabIndex = 46;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
