@@ -37,5 +37,10 @@ namespace Version1
         {
 
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

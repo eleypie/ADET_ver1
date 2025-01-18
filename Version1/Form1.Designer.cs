@@ -67,9 +67,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -77,9 +83,6 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -100,8 +103,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -116,33 +119,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button20);
+            this.panel1.Controls.Add(this.button19);
+            this.panel1.Controls.Add(this.button18);
             this.panel1.Location = new System.Drawing.Point(847, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 1039);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1174, 114);
-            this.panel2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(60, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(835, 55);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
             // 
             // panel3
             // 
@@ -182,6 +165,109 @@
             this.panel3.Size = new System.Drawing.Size(1174, 1031);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 824);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 37);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "ADD-ONS:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 572);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(497, 37);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "BUY ONE TAKE ONE - PHP 80";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(497, 37);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "BUY ONE TAKE ONE - PHP 70";
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.White;
+            this.button20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button20.BackgroundImage")));
+            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Image = global::Version1.Properties.Resources.New_Order;
+            this.button20.Location = new System.Drawing.Point(35, 941);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(257, 57);
+            this.button20.TabIndex = 55;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.White;
+            this.button19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button19.BackgroundImage")));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.White;
+            this.button19.Image = global::Version1.Properties.Resources.Print_Receipt;
+            this.button19.Location = new System.Drawing.Point(35, 879);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(257, 57);
+            this.button19.TabIndex = 54;
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.White;
+            this.button18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button18.BackgroundImage")));
+            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.White;
+            this.button18.Image = global::Version1.Properties.Resources.Place_Order;
+            this.button18.Location = new System.Drawing.Point(35, 816);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(257, 57);
+            this.button18.TabIndex = 53;
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1174, 114);
+            this.panel2.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(60, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(835, 55);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
             // 
             // button17
             // 
@@ -252,7 +338,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(185, 48);
             this.button12.TabIndex = 47;
-            this.button12.Text = "KIkiam";
+            this.button12.Text = "Kikiam";
             this.button12.UseVisualStyleBackColor = false;
             // 
             // button11
@@ -266,37 +352,6 @@
             this.button11.TabIndex = 46;
             this.button11.Text = "Tempura";
             this.button11.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 824);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 37);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "ADD-ONS:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 572);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(497, 37);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "BUY ONE TAKE ONE - PHP 80";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(497, 37);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "BUY ONE TAKE ONE - PHP 70";
             // 
             // pictureBox9
             // 
@@ -501,10 +556,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -518,9 +573,11 @@
 
         }
 
-        #endregion
 
-        
+        #endregion
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button19;
     }
 }
 
