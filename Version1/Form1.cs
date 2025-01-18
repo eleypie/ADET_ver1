@@ -152,27 +152,34 @@ namespace Version1
             rtfReceipt.Clear();
 
            
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
-            rtfReceipt.AppendText("                                            ChaoFan" + Environment.NewLine);
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
-            rtfReceipt.AppendText($"Order Number: {orderNumber}" + Environment.NewLine);
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
-
             
+            rtfReceipt.AppendText("\t\tCuadro De J" + Environment.NewLine);
+            rtfReceipt.AppendText("    Polytechnic University of the Philippines" + Environment.NewLine);
+            rtfReceipt.AppendText("\t\tLagoon, Stall 11" + Environment.NewLine);
+            rtfReceipt.AppendText("\t\t09778420921" + Environment.NewLine);
+            rtfReceipt.AppendText(Environment.NewLine);
+
+
+            rtfReceipt.AppendText($"Time: {DateTime.Now:hh:mm tt}" + Environment.NewLine);
+            rtfReceipt.AppendText($"Date: {DateTime.Now:MM/dd/yyyy}" + Environment.NewLine);
+            rtfReceipt.AppendText($"Order Number: {orderNumber}" + Environment.NewLine);
+
+            rtfReceipt.AppendText(Environment.NewLine);
+          
+
             foreach (string receiptLine in receiptLines)
             {
                 rtfReceipt.AppendText(receiptLine + Environment.NewLine);
             }
 
-            
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
-            rtfReceipt.AppendText($"Total Cost               ₱{totalCost:F2}" + Environment.NewLine);
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
+            rtfReceipt.AppendText(Environment.NewLine);
+
+            rtfReceipt.AppendText($"Total Cost:               ₱{totalCost:F2}" + Environment.NewLine);
+
             rtfReceipt.AppendText($"Payment Method: {paymentMethod}" + Environment.NewLine);
         
-            rtfReceipt.AppendText($"Time: {DateTime.Now:hh:mm tt}" + Environment.NewLine);
-            rtfReceipt.AppendText($"Date: {DateTime.Now:MM/dd/yyyy}" + Environment.NewLine);
-            rtfReceipt.AppendText("=========================================" + Environment.NewLine);
+          
+
 
             label5.Text = $"Order #: {orderNumber}";
             label6.Text = $"Time: {DateTime.Now:hh:mm tt}";

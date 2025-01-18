@@ -185,9 +185,12 @@
             // 
             // rtfReceipt
             // 
+            this.rtfReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtfReceipt.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfReceipt.Location = new System.Drawing.Point(30, 117);
             this.rtfReceipt.Name = "rtfReceipt";
+            this.rtfReceipt.ReadOnly = true;
+            this.rtfReceipt.ShowSelectionMargin = true;
             this.rtfReceipt.Size = new System.Drawing.Size(253, 259);
             this.rtfReceipt.TabIndex = 56;
             this.rtfReceipt.Text = "";
