@@ -181,6 +181,7 @@
             this.label5.Size = new System.Drawing.Size(62, 16);
             this.label5.TabIndex = 60;
             this.label5.Text = "Order #:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // rtfReceipt
             // 

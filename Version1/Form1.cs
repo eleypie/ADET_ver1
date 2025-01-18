@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BrbVideoManager.Controls;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace Version1
 {
@@ -54,23 +56,23 @@ namespace Version1
                 }
             }
 
-            // If no selection, display a message and stop the process
+         
             if (!isSelected)
             {
                 MessageBox.Show("Please select an option in the group box before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Exit the method
+                return; 
             }
 
             double totalCost = 0;
-            List<string> unpairedItems = new List<string>(); // To hold single items that can't form a combo
-            List<string> comboItems = new List<string>(); // To hold combo items
-            List<string> receiptLines = new List<string>(); // For generating receipt content
+            List<string> unpairedItems = new List<string>(); 
+            List<string> comboItems = new List<string>(); 
+            List<string> receiptLines = new List<string>(); 
             int comboCount = 0;
 
-            // Read all lines from RichTextBox
+            
             string[] lines = rtfReceipt.Lines;
 
-            // Process items in sequence
+          
             foreach (string line in lines)
             {
                 string trimmedLine = line.Trim();
@@ -86,21 +88,21 @@ namespace Version1
                         {
                             if (price == 40 || price == 45)
                             {
-                                // Try to pair with previous unpaired item
+                                
                                 if (unpairedItems.Count > 0)
                                 {
-                                    // Check if we can form a combo based on the last item in the unpairedItems list
+                                   
                                     string lastItem = unpairedItems[unpairedItems.Count - 1];
                                     double lastItemPrice = double.Parse(lastItem.Split('-')[1].Replace("php", "").Trim());
 
                                     if (price == 45 && lastItemPrice == 45)
                                     {
-                                        double comboPrice = 80; // Combo price for two 45 php items
+                                        double comboPrice = 80;
                                         comboItems.Add($"Combo ({lastItem} + {itemName} - {price} php) = {comboPrice:C}");
                                         totalCost += comboPrice;
-                                        unpairedItems.RemoveAt(unpairedItems.Count - 1); // Remove the paired item
+                                        unpairedItems.RemoveAt(unpairedItems.Count - 1); 
                                         comboCount++;
-                                        continue; // Skip the single item addition
+                                        continue; 
                                     }
 
                                     if ((price == 40 && lastItemPrice == 40) || (price == 40 && lastItemPrice == 45) || (price == 45 && lastItemPrice == 40))
@@ -108,38 +110,37 @@ namespace Version1
                                         double comboPrice = (price == 40 && lastItemPrice == 40) ? 70 : 80;
                                         comboItems.Add($"Combo ({lastItem} + {itemName} - {price} php) = {comboPrice:C}");
                                         totalCost += comboPrice;
-                                        unpairedItems.RemoveAt(unpairedItems.Count - 1); // Remove the paired item
+                                        unpairedItems.RemoveAt(unpairedItems.Count - 1); 
                                         comboCount++;
-                                        continue; // Skip the single item addition
+                                        continue; 
                                     }
 
                                 }
 
-                                // If no combo is found, add it to unpaired list
+                              
                                 unpairedItems.Add($"{itemName} - {price} php");
                             }
                             else
                             {
-                                // Item price is not eligible for a combo, just add as single
+                               
                                 receiptLines.Add($"{itemName} - {price:C} (Single)");
-                                totalCost += price; // Add the correct price for the single item
+                                totalCost += price; 
                             }
                         }
                     }
                 }
             }
 
-            // Add combo items first, then unpaired items
+           
             foreach (string comboItem in comboItems)
             {
                 receiptLines.Add(comboItem);
             }
 
-            // Process remaining unpaired items
+         
             foreach (string item in unpairedItems)
             {
                 receiptLines.Add($"{item} (Single)");
-                // Add the correct price for the unpaired items
                 string pricePart = item.Split('-')[1].Replace("php", "").Trim();
                 if (double.TryParse(pricePart, out double price))
                 {
@@ -147,34 +148,40 @@ namespace Version1
                 }
             }
 
-            // Clear the RichTextBox for the new receipt
+          
             rtfReceipt.Clear();
 
-            // Add receipt header
+           
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText("                                            ChaoFan" + Environment.NewLine);
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText($"Order Number: {orderNumber}" + Environment.NewLine);
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
 
-            // Add receipt content (combo items first, then single items)
+            
             foreach (string receiptLine in receiptLines)
             {
                 rtfReceipt.AppendText(receiptLine + Environment.NewLine);
             }
 
-            // Add total cost to the receipt
+            
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText($"Total Cost               ₱{totalCost:F2}" + Environment.NewLine);
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
             rtfReceipt.AppendText($"Payment Method: {paymentMethod}" + Environment.NewLine);
-            // Add footer with date and time
+        
             rtfReceipt.AppendText($"Time: {DateTime.Now:hh:mm tt}" + Environment.NewLine);
             rtfReceipt.AppendText($"Date: {DateTime.Now:MM/dd/yyyy}" + Environment.NewLine);
             rtfReceipt.AppendText("=========================================" + Environment.NewLine);
 
-            // Increment the order number for the next order
+            label5.Text = $"Order #: {orderNumber}";
+            label6.Text = $"Time: {DateTime.Now:hh:mm tt}";
+            label7.Text = $"Date: {DateTime.Now:MM/dd/yyyy}";
+
             orderNumber++;
+
+           
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -744,11 +751,11 @@ namespace Version1
             {
                 string[] receiptMarkers = new string[]
                 {
-            "ChaoFan",
-            "Order Number",
-            "Total Cost",
-            "Time:",
-            "Date:"
+                "ChaoFan",
+                "Order Number",
+                "Total Cost",
+                "Time:",
+                "Date:"
                 };
 
                 bool isReceipt = false;
@@ -808,10 +815,37 @@ namespace Version1
 
         private void printBtn_Click(object sender, EventArgs e)
         {
+            string[] receiptMarkers = new string[]
+            {
+                "ChaoFan",
+                "Order Number",
+                "Total Cost",
+                "Time:",
+                "Date:"
+            };
+
+            foreach (string marker in receiptMarkers)
+            {
+                if (!rtfReceipt.Text.Contains(marker))
+                {
+                    MessageBox.Show($"Place your order first.",
+                                    "Incomplete Receipt",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                    return; 
+                }
+            }
+
+           
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
