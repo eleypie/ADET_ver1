@@ -216,6 +216,8 @@
             this.newOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newOrderBtn.BackgroundImage")));
             this.newOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.newOrderBtn.FlatAppearance.BorderSize = 0;
+            this.newOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.newOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.newOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newOrderBtn.ForeColor = System.Drawing.Color.White;
@@ -233,6 +235,8 @@
             this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
             this.printBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.printBtn.FlatAppearance.BorderSize = 0;
+            this.printBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.printBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printBtn.ForeColor = System.Drawing.Color.White;
@@ -250,9 +254,11 @@
             this.placeOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("placeOrderBtn.BackgroundImage")));
             this.placeOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.placeOrderBtn.FlatAppearance.BorderSize = 0;
+            this.placeOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.placeOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.placeOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.placeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeOrderBtn.ForeColor = System.Drawing.Color.White;
+            this.placeOrderBtn.ForeColor = System.Drawing.Color.Transparent;
             this.placeOrderBtn.Image = global::Version1.Properties.Resources.Place_Order;
             this.placeOrderBtn.Location = new System.Drawing.Point(26, 502);
             this.placeOrderBtn.Name = "placeOrderBtn";
@@ -295,6 +301,8 @@
             // button17
             // 
             this.button17.BackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.Location = new System.Drawing.Point(478, 667);
             this.button17.Name = "button17";
@@ -307,6 +315,8 @@
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Location = new System.Drawing.Point(478, 626);
             this.button16.Name = "button16";
@@ -319,6 +329,8 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.Location = new System.Drawing.Point(326, 667);
             this.button15.Name = "button15";
@@ -331,6 +343,8 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(326, 626);
             this.button14.Name = "button14";
@@ -343,6 +357,8 @@
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(177, 667);
             this.button13.Name = "button13";
@@ -355,6 +371,8 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Location = new System.Drawing.Point(177, 626);
             this.button12.Name = "button12";
@@ -367,6 +385,8 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Location = new System.Drawing.Point(27, 667);
             this.button11.Name = "button11";
@@ -378,6 +398,8 @@
             // 
             // button10
             // 
+            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Barlow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(27, 626);
             this.button10.Name = "button10";
@@ -389,6 +411,8 @@
             // 
             // button9
             // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Image = global::Version1.Properties.Resources.NewBurgerSteak;
             this.button9.Location = new System.Drawing.Point(326, 460);
             this.button9.Name = "button9";
@@ -399,6 +423,8 @@
             // 
             // button8
             // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = global::Version1.Properties.Resources.NewTofuSisig;
             this.button8.Location = new System.Drawing.Point(177, 460);
             this.button8.Name = "button8";
@@ -409,6 +435,8 @@
             // 
             // button7
             // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = global::Version1.Properties.Resources.NewSiomai;
             this.button7.Location = new System.Drawing.Point(27, 460);
             this.button7.Name = "button7";
@@ -419,6 +447,8 @@
             // 
             // button6
             // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = global::Version1.Properties.Resources.NewLongganisa;
             this.button6.Location = new System.Drawing.Point(27, 284);
             this.button6.Name = "button6";
@@ -429,6 +459,8 @@
             // 
             // button5
             // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::Version1.Properties.Resources.NewMeatballs;
             this.button5.Location = new System.Drawing.Point(177, 284);
             this.button5.Name = "button5";
@@ -439,6 +471,8 @@
             // 
             // button4
             // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = global::Version1.Properties.Resources.NewEmbutido;
             this.button4.Location = new System.Drawing.Point(326, 190);
             this.button4.Name = "button4";
@@ -449,6 +483,8 @@
             // 
             // button3
             // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Version1.Properties.Resources.NewShanghai;
             this.button3.Location = new System.Drawing.Point(177, 190);
             this.button3.Name = "button3";
@@ -459,6 +495,8 @@
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Version1.Properties.Resources.NewHotdog;
             this.button2.Location = new System.Drawing.Point(478, 190);
             this.button2.Name = "button2";
@@ -469,6 +507,10 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.IndianRed;
             this.button1.Image = global::Version1.Properties.Resources.NewMaling;
             this.button1.Location = new System.Drawing.Point(27, 190);
             this.button1.Name = "button1";
@@ -550,6 +592,7 @@
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
