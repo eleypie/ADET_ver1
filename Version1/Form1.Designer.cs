@@ -41,7 +41,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -50,9 +49,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.rtfReceipt = new System.Windows.Forms.RichTextBox();
-            this.newOrderBtn = new System.Windows.Forms.Button();
-            this.printBtn = new System.Windows.Forms.Button();
-            this.placeOrderBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -62,6 +58,17 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.newOrderBtn = new System.Windows.Forms.Button();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.placeOrderBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -71,17 +78,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,15 +101,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(324, 768);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Version1.Properties.Resources.Logo_Image_1;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 69);
-            this.pictureBox1.TabIndex = 64;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -212,66 +203,6 @@
             this.rtfReceipt.TabIndex = 56;
             this.rtfReceipt.Text = "";
             this.rtfReceipt.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // newOrderBtn
-            // 
-            this.newOrderBtn.BackColor = System.Drawing.Color.White;
-            this.newOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newOrderBtn.BackgroundImage")));
-            this.newOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.newOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.newOrderBtn.FlatAppearance.BorderSize = 0;
-            this.newOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.newOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.newOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newOrderBtn.ForeColor = System.Drawing.Color.White;
-            this.newOrderBtn.Image = global::Version1.Properties.Resources.New_Order;
-            this.newOrderBtn.Location = new System.Drawing.Point(26, 637);
-            this.newOrderBtn.Name = "newOrderBtn";
-            this.newOrderBtn.Size = new System.Drawing.Size(257, 57);
-            this.newOrderBtn.TabIndex = 55;
-            this.newOrderBtn.UseVisualStyleBackColor = false;
-            this.newOrderBtn.Click += new System.EventHandler(this.newOrderBtn_Click);
-            // 
-            // printBtn
-            // 
-            this.printBtn.BackColor = System.Drawing.Color.White;
-            this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
-            this.printBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.printBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.printBtn.FlatAppearance.BorderSize = 0;
-            this.printBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.printBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBtn.ForeColor = System.Drawing.Color.White;
-            this.printBtn.Image = global::Version1.Properties.Resources.Print_Receipt;
-            this.printBtn.Location = new System.Drawing.Point(26, 574);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(257, 57);
-            this.printBtn.TabIndex = 54;
-            this.printBtn.UseVisualStyleBackColor = false;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
-            // 
-            // placeOrderBtn
-            // 
-            this.placeOrderBtn.BackColor = System.Drawing.Color.White;
-            this.placeOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("placeOrderBtn.BackgroundImage")));
-            this.placeOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.placeOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.placeOrderBtn.FlatAppearance.BorderSize = 0;
-            this.placeOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.placeOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.placeOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.placeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeOrderBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.placeOrderBtn.Image = global::Version1.Properties.Resources.Place_Order;
-            this.placeOrderBtn.Location = new System.Drawing.Point(26, 502);
-            this.placeOrderBtn.Name = "placeOrderBtn";
-            this.placeOrderBtn.Size = new System.Drawing.Size(257, 57);
-            this.placeOrderBtn.TabIndex = 53;
-            this.placeOrderBtn.UseVisualStyleBackColor = false;
-            this.placeOrderBtn.Click += new System.EventHandler(this.button18_Click);
             // 
             // panel3
             // 
@@ -423,6 +354,145 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 569);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 54);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "ADD-ONS:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 397);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(511, 54);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "BUY ONE TAKE ONE - PHP 80";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(509, 54);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "BUY ONE TAKE ONE - PHP 70";
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Version1.Properties.Resources.Logo_Image_1;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(183, 69);
+            this.pictureBox1.TabIndex = 64;
+            this.pictureBox1.TabStop = false;
+            // 
+            // newOrderBtn
+            // 
+            this.newOrderBtn.BackColor = System.Drawing.Color.White;
+            this.newOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newOrderBtn.BackgroundImage")));
+            this.newOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.newOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.newOrderBtn.FlatAppearance.BorderSize = 0;
+            this.newOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.newOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.newOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newOrderBtn.ForeColor = System.Drawing.Color.White;
+            this.newOrderBtn.Image = global::Version1.Properties.Resources.New_Order;
+            this.newOrderBtn.Location = new System.Drawing.Point(26, 637);
+            this.newOrderBtn.Name = "newOrderBtn";
+            this.newOrderBtn.Size = new System.Drawing.Size(257, 57);
+            this.newOrderBtn.TabIndex = 55;
+            this.newOrderBtn.UseVisualStyleBackColor = false;
+            this.newOrderBtn.Click += new System.EventHandler(this.newOrderBtn_Click);
+            // 
+            // printBtn
+            // 
+            this.printBtn.BackColor = System.Drawing.Color.White;
+            this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
+            this.printBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.printBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.printBtn.FlatAppearance.BorderSize = 0;
+            this.printBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.printBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.ForeColor = System.Drawing.Color.White;
+            this.printBtn.Image = global::Version1.Properties.Resources.Print_Receipt;
+            this.printBtn.Location = new System.Drawing.Point(26, 574);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(257, 57);
+            this.printBtn.TabIndex = 54;
+            this.printBtn.UseVisualStyleBackColor = false;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
+            // placeOrderBtn
+            // 
+            this.placeOrderBtn.BackColor = System.Drawing.Color.White;
+            this.placeOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("placeOrderBtn.BackgroundImage")));
+            this.placeOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.placeOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.placeOrderBtn.FlatAppearance.BorderSize = 0;
+            this.placeOrderBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.placeOrderBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.placeOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.placeOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placeOrderBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.placeOrderBtn.Image = global::Version1.Properties.Resources.Place_Order;
+            this.placeOrderBtn.Location = new System.Drawing.Point(26, 502);
+            this.placeOrderBtn.Name = "placeOrderBtn";
+            this.placeOrderBtn.Size = new System.Drawing.Size(257, 57);
+            this.placeOrderBtn.TabIndex = 53;
+            this.placeOrderBtn.UseVisualStyleBackColor = false;
+            this.placeOrderBtn.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Version1.Properties.Resources.Header;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1006, 114);
+            this.panel2.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(58, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(575, 54);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
+            // 
             // button9
             // 
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -541,76 +611,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 569);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 54);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "ADD-ONS:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 397);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(511, 54);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "BUY ONE TAKE ONE - PHP 80";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 133);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 54);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "BUY ONE TAKE ONE - PHP 70";
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Document = this.printDocument1;
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Version1.Properties.Resources.Header;
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1006, 114);
-            this.panel2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Barlow", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(58, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(575, 54);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "PAIR TWO CHAO FAN TOPPINGS  ";
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -619,8 +619,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Font = new System.Drawing.Font("Barlow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
@@ -632,11 +632,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
