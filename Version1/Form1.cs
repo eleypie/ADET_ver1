@@ -59,7 +59,9 @@ namespace Version1
          
             if (!isSelected)
             {
-                MessageBox.Show("Please select an option in the group box before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               // MessageBox.Show("Please select an option in the group box before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Error_Payment error_Payment = new Error_Payment();
+                error_Payment.Show();
                 return; 
             }
 
