@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Version1
 {
-    public partial class Form2 : Form
+    public partial class Order_Placed : Form
     {
-        public Form2()
+        public Order_Placed()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

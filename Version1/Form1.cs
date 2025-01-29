@@ -61,7 +61,7 @@ namespace Version1
             {
                // MessageBox.Show("Please select an option in the group box before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Error_Payment error_Payment = new Error_Payment();
-                error_Payment.Show();
+                error_Payment.ShowDialog();
                 return; 
             }
 
@@ -189,6 +189,8 @@ namespace Version1
 
             orderNumber++;
 
+            Order_Placed order_Placed = new Order_Placed();
+            order_Placed.ShowDialog();
            
 
         }
@@ -854,11 +856,10 @@ namespace Version1
             {
                 if (!rtfReceipt.Text.Contains(marker))
                 {
-                    MessageBox.Show($"Place your order first.",
-                                    "Incomplete Receipt",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Warning);
-                    return; 
+                    Order_Error order_Error = new Order_Error();
+                    order_Error.ShowDialog();
+                    return;
+                   
                 }
             }
 
