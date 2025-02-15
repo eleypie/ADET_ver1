@@ -16,22 +16,14 @@ Ensure you have the following installed:
 
 ### Installation Guide
 
-1. Clone the repository using the following command:
-   ```sh
-   git clone https://github.com/your-repo/ChaoFanKiosk.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd ChaoFanKiosk
-   ```
+1. Clone the repository.
+2. Navigate to the project folder.
 3. Open the solution file (`.sln`) in **Visual Studio Community 2022**.
 4. Build and run the project.
 
 ## Running the Application
 
-1. Open Visual Studio and navigate to `ChaoFanKiosk.sln`.
+1. Open Visual Studio and navigate to `Version1.sln`.
 2. Click **Start** to run the application.
 
----
 
-Feel free to update the repository link and add more details like features, screenshots, or contribution guidelines! 🚀
