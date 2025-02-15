@@ -16,14 +16,19 @@ Ensure you have the following installed:
 
 ### Installation Guide
 
-1. Clone the repository.
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/eleypie/ADET_ver1.git
 2. Navigate to the project folder.
-3. Open the solution file (`.sln`) in **Visual Studio Community 2022**.
-4. Build and run the project.
+    ```sh
+   cd ADET_ver1
+4. Open the solution file:
+- **Launch Visual Studio Community 2022.**
+- **Open the solution file (`ADET_ver1.sln`) located in the project folder.**
+7. Build and run the project:
+- **In Visual Studio, select (`Build > Build Solution`) to restore dependencies and compile the project.**
 
 ## Running the Application
-
-1. Open Visual Studio and navigate to `Version1.sln`.
-2. Click **Start** to run the application.
+- **After building, click the Start button (or press F5) in Visual Studio to run the application.**
 
 
